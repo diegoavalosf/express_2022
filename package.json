@@ -4,7 +4,7 @@
   "description": "An API Rest using Nodejs",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index",
+    "start": "npx nodemon index",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
