@@ -15,7 +15,7 @@ user.post("/signin", async (req, res, next)=>{
         if(rows.affectedRows == 1){
             return res.status(201).json({code: 201, message: "User registered correctly"});
         }
-        return res.status(500).json({code: 500, message: "Error!"});
+        return res.status(401).json({code: 401, message: "Error!"});
     }
     return res.status(500).json({code:500, message:"Error: Empty fields"})
 });
