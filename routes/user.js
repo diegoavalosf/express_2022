@@ -34,10 +34,10 @@ user.post("/login", async (req, res, next)=>{
             return res.status(200).json({code: 200, message: token})
         }
         else{
-            return res.status(401).json({code: 401, message: "Incorrect user or password."})
+            return res.status(200).json({code: 401, message: "Incorrect user or password."})
         }
     }
-    return res.status(500).json({code:500, message:"Error: Empty fields"})
+    return res.status(200).json({code:500, message:"Error: Empty fields"})
     
 });
 
